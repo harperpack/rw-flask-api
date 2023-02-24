@@ -1,0 +1,2 @@
+gunicorn flask
+flask_cors
