@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------
+>> POST > "write" (for "append", swap "write" with "append" below)
+
+// JAVASCRIPT
+fetch("http://api.the-singularity-show.com/api/write/", {
+    method: "POST",
+    body: JSON.stringify({
+        file: "hello_world",
+        content: "Hello, world!"
+    }),
+    headers: {
+        "Content-Type": "application/json"
+    }
+})
+.then((response) => response.json())
+.then((json) => console.log(json));
+
+## PYTHON
+import requests
+
+url = "http://api.the-singularity-show.com/api/write/"
+body = {"file": "hello_world", "content": "Hello, world!"}
+response = requests.post(url, json=body)
+print(response.json())
+
+
+>> POST > "read" (for "latest", swap "read" with "latest" below)
+
+// JAVASCRIPT
+fetch("http://api.the-singularity-show.com/api/read/", {
+    method: "POST",
+    body: JSON.stringify({
+        file: "hello_world",
+    }),
+    headers: {
+        "Content-Type": "application/json"
+    }
+})
+.then((response) => response.json())
+.then((json) => console.log(json));
+
+## PYTHON
+import requests
+
+url = "http://api.the-singularity-show.com/api/read/"
+body = {"file": "hello_world"}
+response = requests.post(url, json=body)
+print(response.json())
+-------------------------------------------------------------------------
