@@ -12,7 +12,7 @@ A simple API allowing POST requests to write to and read from json files.
 - Files written can be found in <code>./files/</code>
 
 - The deployed version of this repo can be found at <code>http://api.the-singularity-show.com/api/</code>
-  - *following the instructions in the Digital Ocean tutorials for 
+  - *following the instructions in the Digital Ocean tutorials for:* 
     - [setting up a server](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04)
     - [installing NGINX](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-22-04)
     - [serving up a Flask application on a server running NGINX](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-22-04)
