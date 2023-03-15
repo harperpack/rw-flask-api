@@ -1,2 +1,4 @@
 gunicorn flask
 flask_cors
+pyjwt
+python-dotenv

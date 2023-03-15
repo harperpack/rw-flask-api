@@ -2,9 +2,12 @@
 
 python -m venv venv
 source venv/bin/activate
+# source .env
+pip install python-dotenv
 # pip install wheel
 pip install flask
 pip install flask_cors
+pip install pyjwt
 # pip install gunicorn flask
 export FLASK_APP=./core/app
 # export FLASK_ENV=development
